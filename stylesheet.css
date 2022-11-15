@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #C0D28D;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    color: white;
+    margin: 0 35px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 18px;
+    
+}
+.navbar{
+    background-color: #2E5349;
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+}
+.navbar nav{
+    max-width: 800px;
+    margin: 0 auto;
+}
+nav a:link, a:visited{
+    color: white;
+    text-decoration: none;
+}
+a:hover, body#home nav li:nth-child(1) a, body#about nav li:nth-child(2) a, body#author nav li:nth-child(3) a, body#movie nav li:nth-child(4) a, body#buy nav li:nth-child(5) a{
+    color: #F8E258;
+}
+h1{
+    font-family: 'Inria Serif', serif;
+    text-align: center;
+    font-size: 48px;
+}
+.text{
+    font-family: 'Gowun Batang', serif;
+    color: black;
+    max-width: 800px;
+}
+.price{
+    background-color: #468947;
+    padding: 20px;
+    color: white;
+    width: 200px;
+    font-family: 'Gowun Batang', serif;
+}
+.button{
+    background-color: #468947;
+    color: white;
+    font-family: 'Hind', sans-serif;
+    text-decoration: none;
+    padding: 15px 20px;
+}
+.row{
+    display: flex;
+}
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: block
+    }
+    body{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 36px;
+    }
+}
