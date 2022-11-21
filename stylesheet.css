@@ -40,25 +40,39 @@ h1{
 .text{
     font-family: 'Gowun Batang', serif;
     color: black;
-    max-width: 800px;
+    max-width: 500px;
+    padding: 30px;
 }
 .price{
     background-color: #468947;
-    padding: 20px;
     color: white;
-    width: 200px;
     font-family: 'Gowun Batang', serif;
+    width: 200px;
+    padding: 20px;
+    margin: 0;
+    height: 200px;
+
 }
 .button{
     background-color: #468947;
     color: white;
     font-family: 'Hind', sans-serif;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 20px 40px;
 }
 .row{
     display: flex;
+    justify-content: center;
 }
+#content{
+max-width: 500px;
+margin: 0 auto;
+text-align: center;
+}
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
 
 @media only screen and (max-width: 800px){
     nav ul{
@@ -72,5 +86,12 @@ h1{
     }
     h1{
         font-size: 36px;
+    }
+    .row{
+        display: block;
+        text-align: center;
+    }
+    .price{
+        margin: auto;
     }
 }
