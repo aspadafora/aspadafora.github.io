@@ -71,11 +71,13 @@ h3{
     font-family: 'Gupter', serif;
     font-size: 48px;
     font-weight: normal;
+    margin-top: 150px;
+    margin-left: 175px;
 }
 .days{
     font-size: 30px;
-    word-spacing: 50px;
     margin: auto;
+    line-height: 50px;
 }
 @media only screen and (max-width: 800px){
     h1{
@@ -90,5 +92,7 @@ h3{
     .square{
         max-width: 100%;
     }
-    .row{display: block;}
+    .row{
+        display: block;
+    }
 }
