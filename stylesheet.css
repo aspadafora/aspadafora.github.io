@@ -12,8 +12,7 @@ nav li{
     margin: 0 35px;
     height: 75px;
     line-height: 75px;
-    font-size: 18px;
-    
+    font-size: 18px;   
 }
 .navbar{
     background-color: white;
@@ -31,29 +30,60 @@ a:hover, body#home nav li:nth-child(1) a, body#about nav li:nth-child(2) a, body
     width: 100px;
     padding: 10px;
 }
-.col{
+.row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#hero{
+    background-image: url(cookies.jpg);
     display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.col img{
+    width: 100%;
+    height: auto;
 }
 .responsive{
     max-width: 100%;
 }
-.slogan{
+.headings{
     text-align: center;
     color: white;
     background-color: #DFC2A8;
     height: auto;
-    padding: 10px;
+    padding: 25px;
     margin: 0;
+    font-size: 24px;
 }
+.headings ul{
+    margin: 0;
+    padding: 0;
+}
+.headings li{
+    display: inline;
+    list-style: none;
+    font-family: 'Gudea', sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+}
+.headings li::after {
+    content: ' • ';
+}
+.headings li:last-child:after {
+    content: '';
+}
+
 h1{
     font-family: 'Gupter', serif;
     font-weight: normal;
     font-size: 64px;
-}
-h2{
-    font-family: 'Gudea', sans-serif;
-    font-weight: normal;
-    font-size: 24px;
 }
 .row{
     display: flex;
@@ -71,28 +101,97 @@ h3{
     font-family: 'Gupter', serif;
     font-size: 48px;
     font-weight: normal;
-    margin-top: 150px;
-    margin-left: 175px;
+
 }
 .days{
     font-size: 30px;
-    margin: auto;
     line-height: 50px;
+    width: 450px;
+    margin: auto;
+}
+form{
+    padding: 2em;
+    width: 300px;
+}
+label, input{
+    width: 100%;
+    display: block;
+}
+.story{
+background-color: #304F56;
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+    text-justify: right;
+    height: 100px;
+    color: white;
+    font-family: 'Gudea', sans-serif;
+    font-size: 24px;
 }
 @media only screen and (max-width: 800px){
+    .logo{
+        display:block inline;
+        width: 100%;
+        text-align: center;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .row-1{
+    flex-direction: column;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: block
+    }
     h1{
         font-size: 36px;
     }
-    h2{
+    .headings li{
+        font-size: 13px;
+    }
+    body{
+        flex-direction: column;
+    }
+    .days{
         font-size: 16px;
+        width: auto;
     }
-    .slogan{
-        height: auto;
-    }
-    .square{
-        max-width: 100%;
-    }
-    .row{
+    .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: white;
+        height: 500px;
+        color: black;
+        border-radius: 10px;
+      }
+      .navbar {
+        overflow: hidden;
+        background-color: white;
+        position: relative;
+      }
+      .navbar #myLinks {
+        display: none;
+      }
+      .navbar a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
         display: block;
-    }
+      }
+      .navbar a.icon {
+        background: white;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: white;
+      }
+      
 }

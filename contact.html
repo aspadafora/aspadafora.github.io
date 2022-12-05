@@ -14,7 +14,12 @@
 <link rel="icon" type="image/x-icon" href="favicon.svg">
     <title>Contact-Sweet Tooth Bakery</title>
 </head>
-<body>
+<body id="contact">
+    <div class="container">
+    <div class="row-1">
+    <div class="logo">
+        <img src="logo.svg" alt="sweet-tooth-logo">
+</div>
     <div class="navbar">
         <nav>
             <ul>
@@ -24,10 +29,22 @@
                 <li><a href="classes.html">Classes</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-        </nav> 
+        </nav>
     </div>
-    <div class="logo">
-        <img src="logo.svg" alt="sweet-tooth-logo">
     </div>
+    </div>
+    <form>
+        <label for="fullname"> Name:</label>
+        <br>
+        <input id="fullname"  name= fullname type="text" required> <br>
+        <label for="email"> Email:</label>
+        <br>
+        <input id="email"  name= email type="text" required> 
+        <br>
+      <label for="message">Message:</label>
+      <br>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>        
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
