@@ -14,8 +14,11 @@
 <link rel="icon" type="image/x-icon" href="favicon.svg">
     <title>Sweet Tooth Bakery</title>
 </head>
-<div class="mobile container">
 <body id="home">
+    <div class="nav-open">
+    <button id="toggle-nav">
+        <img src="hamburger.svg" alt="button to trigger menu toggle">
+    </button>
     <div class="container">
     <div class="row-1">
     <div class="logo">
@@ -31,7 +34,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </div>
     </div>
     </div>
 </div>
@@ -72,15 +74,21 @@
         </table>
         </div>
     </div>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-        </script>
+</div>
+<script>
+    // Perform this after the window has loaded
+    window.onload = function() {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      let toggleNav = document.getElementById('toggle-nav');
+
+      // Tell button to do something on click
+      toggleNav.addEventListener('click', function(){
+
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+
+      });
+    };
+</script>
 </body>
 </html>
