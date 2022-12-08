@@ -28,6 +28,7 @@ a:hover, body#home nav li:nth-child(1) a, body#about nav li:nth-child(2) a, body
 }
 .logo{
     width: 100px;
+    padding: 10px;
 }
 .row-1{
     display: flex;
@@ -112,6 +113,7 @@ h2{
 form{
     padding: 2em;
     width: 250px;
+    font-family: 'Gudea', sans-serif;
 }
 .submit{
     background-color: #304F56;
@@ -119,6 +121,7 @@ form{
     height: 50px;
     width: 85px;
     margin-top: 20px;
+    border: none;
 }
 label, input{
     width: 100%;
@@ -146,58 +149,87 @@ background-color: #304F56;
 .middle-row{
     display: flex;
 }
-.class-list{
-    background-color: #DFC2A8;
-}
-.learn{
-    max-width: 100%;
-    display: flex;
-    background-color: #DFC2A8;
-}
-.schedule{
-    background-color: #304F56;
-    color: white;
-    font-family: 'Gudea', sans-serif; 
-    margin: auto;
-    width: 100%;
-}
-.information{
-    background-color: #304F56;
-    color: white;
-    max-width: 50%;
-    padding: 20px;
-}
-.contacting{
-    display: flex;
-}
-.order{
-    background-color: #DFC2A8;
-    color: white;
-    height: 75px;
-    padding-bottom: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 .menu.titles{
     color: #8E5C2F;
     font-family: 'Gupter', serif;
 }
 .food-list{
-    font-family: 'Gudea', sans-serif;  
-}
-.sign-up{
     font-family: 'Gudea', sans-serif; 
-    display: flex;
-    background-color: #DFC2A8;
-}
-.class-list li{
-    font-family: 'Gudea', sans-serif;   
-}
-.sign-up-table{
-    display: block;
+    font-size: 18px;
+    line-height: 35px;
+    line-height: 50px;
+    margin: auto;
+    width: 375px;
+    padding-top: 50px; 
 }
 .menu-intro{
 text-align: center;
+padding: 0;
+margin: auto;
+}
+.square2{
+    max-width: 50%;
+}
+.row-2{
+    display: flex;
+}
+.class-list{
+    background-color: #DFC2A8;
+    width: 50%;
+    font-family: 'Gudea', sans-serif; 
+    line-height: 25px;
+    padding: 25px;
+    margin: 0;
+}
+.sign-up{
+background-color: #DFC2A8;
+width: 50%;
+font-family: 'Gudea', sans-serif; 
+line-height: 25px;
+padding: 25px;
+margin: 0;
+}
+.schedule{
+    background-color: #304F56;
+    color: white;
+    font-family: 'Gudea', sans-serif; 
+    max-width: 100%; 
+    line-height: 25px;
+    padding: 25px;
+    margin: 0;
+}
+.schedule table{
+    color: white;
+    font-family: 'Gudea', sans-serif; 
+    font-size: 18px;
+    line-height: 35px;
+    line-height: 50px;
+    margin: auto;
+    width: 375px;
+    padding-top: 50px; 
+}
+.schedule-title{
+    font-family: 'Gupter', serif;
+    font-size: 48px; 
+    padding-bottom: 25px;
+}
+.information{
+    background-color: #304F56;
+    width: 50%;
+    padding: 25px;
+    margin: 0; 
+    font-size: 12px;
+    line-height: 50px;
+    color: white;
+    font-family: 'Gudea', sans-serif; 
+}
+.contact-info{
+    display: flex;
+}
+.submit-order{
+    background-color: #DFC2A8;
+    width: 50%;
+    padding: 10px;
 }
 @media only screen and (max-width: 800px){
     #toggle-nav{
@@ -208,7 +240,7 @@ text-align: center;
     }
     .logo{
         display:block inline;
-        width: 100%;
+        width: calc(100%-20px);
         text-align: left;
     }
     .logo img{
@@ -255,5 +287,36 @@ text-align: center;
       .story{
         font-size: 14px;
         height: auto;
+      }
+      .square2{
+        max-width: 100%;
+        height: 100%;
+      }
+      .top-row{
+        display: block;
+      }
+      .menu-intro{
+        padding: 20px;
+      }
+      .middle-row{
+        display: block;
+      }
+      .row-2{
+        display: block;
+      }
+      .class-list{
+        width: auto;
+      }
+      .sign-up{
+       width: auto;
+      }
+      .submit-order{
+width: auto;
+      }
+      .information{
+width: auto;
+      }
+      .contact-info{
+        display: block;
       }
 }
