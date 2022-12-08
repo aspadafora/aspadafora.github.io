@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightslategray;
+        }
+        .row{
+            display: flex;
+        }
+        div{
+            background-color: white;
+            border: 1px solid black;
+            height: 200px;
+            text-align: center;
+        }
+        .col-50{
+            width: 50%;
+        }
+        .col-33{
+            width: 33.3%;
+        }
+        .col-a{
+            width: 1200px
+        }
+        .col-b{
+            width: 200px;
+        }
+        .col-100{
+            width: 100%;
+        }
+        .header{
+            width: 100%;
+        }
+        .main{
+            width: 80%;
+            max-width: 1440px;
+            margin: 20px auto;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="row">
+        <div class="header">header:col-100
+            <br>
+            This entire layout is 1440px wide
+        </div>
+ </header>
+
+    <div class="row">
+        <div class="col-a">col-a</div>
+        <div class="col-b">col-b
+            <br>
+            (width 200px)
+        </div>
+    </div>
+  
+    <div class="row">
+        <div class="col-50">col-50</div>
+        <div class="col-50">col-50</div> 
+    </div>
+
+    <div class="row">
+        <div class= "col-33">col-33</div>
+        <div class= "col-33">col-33</div>
+        <div class= "col-33">col-33</div>
+    </div>
+</body>
+<footer>
+    <div class="row">
+        <div class="col-100">footer: col-100</div>
+    </div>
+</div>
+</footer>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>Menu-Sweet Tooth Bakery</title>
+</head>
+<body id="menu">
+    <div class="nav-open">
+        <button id="toggle-nav">
+            <img src="hamburger.svg" alt="button to trigger menu toggle">
+        </button>
+    <div class="container">
+    <div class="row-1">
+    <div class="logo">
+        <img src="logo.svg" alt="sweet-tooth-logo">
+</div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+    </div>
+    <div class="food">
+        <div class="top-row">
+        <img src="donuts.jpg" alt="donuts" class="square">
+        <div class="menu-intro">
+       <h1>Menu</h1>
+       <div>All baked goods from Sweet Tooth Bakery are Gluten Free and Vegan</div>
+    </div>
+  </div>
+    <div class="middle-row">
+        <img src="croissant.jpg" alt="croissant" class="square">
+        <table class="food-list">
+            <tr>
+                <td colspan="2" class="menu-titles">Cookies</td>
+            </tr>
+            <tr>
+              <td>Chocolate Chip</td>
+              <td>$0.99</td>
+            </tr>
+            <tr>
+              <td>Sugar Cookie</td>
+              <td>$0.99</td>
+            </tr>
+            <tr>
+            <td>Oatmeal Raisin</td>
+            <td>$0.99</td>
+            </tr>
+            <tr>
+            <td>Peanut Butter</td>
+            <td>$0.99</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="menu-titles">Muffins</td>
+            </tr>
+            <tr>
+              <td>Chocolate Chip</td>
+              <td>$1.59</td>
+            </tr>
+            <tr>
+              <td>Chocolate</td>
+              <td>$1.59</td>
+            </tr>
+            <tr>
+            <td>Blueberry</td>
+            <td>$1.59</td>
+            </tr>
+            <tr>
+            <td>Apple Cinnamon</td>
+            <td>$1.59</td>
+            </tr>
+            <td colspan="2" class="menu-titles">Pastries</td>
+        </tr>
+        <tr>
+          <td>Cannolis</td>
+          <td>$1.29</td>
+        </tr>
+        <tr>
+          <td>Cinnamon Rolls</td>
+          <td>$1.49</td>
+        </tr>
+        <tr>
+        <td>Croissants</td>
+        <td>$1.09</td>
+        </tr>
+        <tr>
+        <td>Macaroons</td>
+        <td>$0.99</td>
+        </tr>
+        </table>
+    </div>
+    <div class="bottom-row">
+        <img src="cinnamonbun.jpg" alt="cinnamon bun" class="square">
+    </div>
+    </div>
+    <script>
+        // Perform this after the window has loaded
+        window.onload = function() {
+          // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+          let toggleNav = document.getElementById('toggle-nav');
+    
+          // Tell button to do something on click
+          toggleNav.addEventListener('click', function(){
+    
+            // toggle the body's class attribute
+            document.body.classList.toggle('nav-open');
+    
+          });
+        };
+    </script>
+</body>
+</html>

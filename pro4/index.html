@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gupter&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="icon" type="image/x-icon" href="favicon.svg">
+    <title>Sweet Tooth Bakery</title>
+</head>
+<body id="home">
+    <div class="nav-open">
+    <button id="toggle-nav">
+        <img src="hamburger.svg" alt="button to trigger menu toggle">
+    </button>
+    <div class="container">
+    <div class="row-1">
+    <div class="logo">
+        <img src="logo.svg" alt="sweet-tooth-logo">
+</div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+</div>
+    <div id="hero">
+    </div>
+    <div class="headings">
+        <h1>Bake Sweet Memories Here</h1> 
+        <ul>
+            <li>Homey</li>
+            <li>Warm</li>
+            <li>Inviting</li>
+            <li>Inclusive</li>
+            <li>Diverse</li>
+            <li>Fresh</li>
+            <li>Efficient</li>
+            <li>Educational</li>
+        </ul>
+    </div>
+    <div class="row">
+        <img src="croissants.jpg" alt="croissants" class="square">
+        <div class="hours">
+        <table class="days">
+            <tr>
+                <td colspan="2">Hours</td>
+            </tr>
+            <tr>
+              <td>Monday-Friday</td>
+              <td>10am-6pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>9am-7pm</td>
+            </tr>
+            <tr>
+            <td>Sunday</td>
+            <td>Closed</td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</div>
+<script>
+    // Perform this after the window has loaded
+    window.onload = function() {
+      // First, tell JavaScript to remember which DOM element (in this case, a button) to reference (by id)
+      let toggleNav = document.getElementById('toggle-nav');
+
+      // Tell button to do something on click
+      toggleNav.addEventListener('click', function(){
+
+        // toggle the body's class attribute
+        document.body.classList.toggle('nav-open');
+
+      });
+    };
+</script>
+</body>
+</html>

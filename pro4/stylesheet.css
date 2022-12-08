@@ -1,0 +1,259 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline-block;
+    color: black;
+    margin: 0 35px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 18px;   
+}
+.navbar{
+    background-color: white;
+    text-align: right;
+    font-family: 'Gupter', serif;
+}
+nav a:link, a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:hover, body#home nav li:nth-child(1) a, body#about nav li:nth-child(2) a, body#menu nav li:nth-child(3) a, body#classes nav li:nth-child(4) a, body#contact nav li:nth-child(5) a{
+    color: #8E5C2F;
+}
+.logo{
+    width: 100px;
+}
+.row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#hero{
+    background-image: url(cookies.jpg);
+    display: block;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 350px;
+}
+.col img{
+    width: 100%;
+    height: auto;
+}
+.responsive{
+    max-width: 100%;
+}
+.headings{
+    text-align: center;
+    color: white;
+    background-color: #DFC2A8;
+    height: auto;
+    padding: 25px;
+    margin: 0;
+    font-size: 24px;
+    max-width: 100%;
+}
+.headings ul{
+    margin: 0;
+    padding: 0;
+}
+.headings li{
+    display: inline;
+    list-style: none;
+    font-family: 'Gudea', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+.headings li::after {
+    content: ' • ';
+}
+.headings li:last-child:after {
+    content: '';
+}
+h1{
+    font-family: 'Gupter', serif;
+    font-weight: normal;
+    font-size: 64px;
+    color: white;
+}
+.row{
+    display: flex;
+}
+.square{
+max-width: 50%;
+}
+.hours{
+    background-color: #304F56;
+    width: 50%;
+    color: white;
+    padding: auto;
+}
+h2{
+    font-family: 'Gupter', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #8E5C2F;
+}
+.days{
+    font-size: 24px;
+    line-height: 50px;
+    margin: auto;
+    width: 375px;
+}
+form{
+    padding: 2em;
+    width: 250px;
+}
+.submit{
+    background-color: #304F56;
+    color: white;
+    height: 50px;
+    width: 85px;
+    margin-top: 20px;
+}
+label, input{
+    width: 100%;
+    display: block;
+}
+.story{
+background-color: #304F56;
+    max-width: 100%;
+    margin: 0;
+    padding: 50px;
+    height: 100px;
+    color: white;
+    font-family: 'Gudea', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+}
+#toggle-nav{
+    display: none;
+}
+.top-row{
+    display: flex;
+    color: white;
+    background-color: #DFC2A8;
+}
+.middle-row{
+    display: flex;
+}
+.class-list{
+    background-color: #DFC2A8;
+}
+.learn{
+    max-width: 100%;
+    display: flex;
+    background-color: #DFC2A8;
+}
+.schedule{
+    background-color: #304F56;
+    color: white;
+    font-family: 'Gudea', sans-serif; 
+    margin: auto;
+    width: 100%;
+}
+.information{
+    background-color: #304F56;
+    color: white;
+    max-width: 50%;
+    padding: 20px;
+}
+.contacting{
+    display: flex;
+}
+.order{
+    background-color: #DFC2A8;
+    color: white;
+    height: 75px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.menu.titles{
+    color: #8E5C2F;
+    font-family: 'Gupter', serif;
+}
+.food-list{
+    font-family: 'Gudea', sans-serif;  
+}
+.sign-up{
+    font-family: 'Gudea', sans-serif; 
+    display: flex;
+    background-color: #DFC2A8;
+}
+.class-list li{
+    font-family: 'Gudea', sans-serif;   
+}
+.sign-up-table{
+    display: block;
+}
+.menu-intro{
+text-align: center;
+}
+@media only screen and (max-width: 800px){
+    #toggle-nav{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+    .logo{
+        display:block inline;
+        width: 100%;
+        text-align: left;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .row-1{
+    flex-direction: column;
+    }
+    .navbar{
+        display: none;
+    }
+    body.nav-open .navbar{
+        display: block;
+    }
+    nav ul{
+        text-align: center;
+    }
+    nav li{
+        display: block
+    }
+    h1{
+        font-size: 36px;
+    }
+    .headings li{
+        font-size: 13px;
+    }
+    body{
+        flex-direction: column;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .square{
+        max-width: 100%;
+    }
+    .hours{
+        width: auto;
+    }
+    .days{
+        font-size: 16px;
+        width: auto;
+        font-size: 16px;
+    }
+      .story{
+        font-size: 14px;
+        height: auto;
+      }
+}
